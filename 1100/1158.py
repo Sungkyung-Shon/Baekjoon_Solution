@@ -12,8 +12,7 @@ result = []
 i = 0
 while len(people) > 0:
     for j in range(1, k):
-        #people.append(people.popleft())
-        people.popleft()
+        people.append(people.popleft())
     result.append(people.popleft())
 
 print(str(result).replace('[', '<').replace(']', '>'))
