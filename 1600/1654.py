@@ -7,13 +7,13 @@ cable = deque()
 for i in range(1, n+1):
     cable.append(int(input()))
 
-left, right = 1, max(cable)  #  1 <= 랜선 최대의 길이 <= max(cable)
+left, right = 1, max(cable)  
 while left <= right:
-    x = 0 # 랜선의 개수
+    x = 0 
     mid = (left + right) // 2
     for j in cable:
         if j >= mid:
-            x += j//mid  #  몫 = 랜선의 개수
+            x += j//mid  
     if x < k:
         right = mid-1
     else:
