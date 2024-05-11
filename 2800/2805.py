@@ -4,7 +4,6 @@ N, M = map(int, sys.stdin.readline().split())
 tree = list(map(int, sys.stdin.readline().split()))
 
 left, right = 0, max(tree)
-result = 0 
 while left <= right:
     num = 0
     mid = (left + right) // 2  
