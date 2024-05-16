@@ -8,7 +8,7 @@ def dfs(x):
         if not visited[node]:
             dfs(node)
 
-sys.setrecursionlimit(10**7)
+sys.setrecursionlimit(10**6)
 input = sys.stdin.readline
 n, m = map(int, input().split())
 graph = list([] for _ in range(n+1))
@@ -19,7 +19,7 @@ for _ in range(m):
     graph[b].append(a)
 
 visited = [False]*(n+1)
-cnt = 0 #연결 요소 개수
+cnt = 0 
 
 for i in range(1, n+1):
     if not visited[i]:
