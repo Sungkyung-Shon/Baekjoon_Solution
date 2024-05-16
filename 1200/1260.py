@@ -18,23 +18,19 @@ def bfs():
                 visited[next] = True 
                 q.append(next)  
 
-
 input = sys.stdin.readline
 n, m, v = map(int, input().split())
 
 graph = [[False]*(n+1) for _ in range(n+1)]  
 visited = [False] * (n+1) 
 
-
 for _ in range(m):
     a, b = map(int, input().split())
     graph[a][b] = True
     graph[b][a] = True
 
-
 dfs(v)   
 print()   
-
 
 visited = [False] * (n+1)   
 q = [v]   
