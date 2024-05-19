@@ -21,8 +21,6 @@ def bfs(start, end):
     # 이곳에 도달할 일 없지만
     return -1
 
-
-
 n, k = map(int, input().split())
 ans = bfs(n, k)
 print(ans)
