@@ -3,7 +3,7 @@ import sys
 n = int(input())
 cards = list(map(int, sys.stdin.readline().split()))
 
-cards.sort(reverse=True)  # 내림차순 정렬
+cards.sort(reverse=True) 
 
 gold = 0
 for i in range(1, n):
