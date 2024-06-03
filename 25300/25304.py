@@ -7,7 +7,5 @@ for i in range(n):
 
 if total == x:
     print("Yes")
-print("No")
-
-
-
+else:
+    print("No")
